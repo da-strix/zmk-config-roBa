@@ -46,39 +46,49 @@
             key-positions = <22 23>;
         };
 
-        bracket {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <23 24>;
+        brace_l {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <30 32>;
         };
 
         bracket_r {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <24 25>;
+            bindings = <&kp BACKSLASH>;
+            key-positions = <31 32>;
         };
 
         plus {
-            bindings = <&kp PLUS>;
-            key-positions = <19 20>;
+            bindings = <&kp LS(SEMI)>;
+            key-positions = <20 18>;
         };
 
         equal {
-            bindings = <&kp KP_EQUAL>;
-            key-positions = <31 30>;
+            bindings = <&kp UNDER>;
+            key-positions = <19 20>;
         };
 
         at {
             bindings = <&kp AT_SIGN>;
-            key-positions = <23 25>;
+            key-positions = <25 24>;
         };
 
         doll {
             bindings = <&kp DOLLAR>;
-            key-positions = <31 32>;
+            key-positions = <23 24>;
         };
 
         and {
             bindings = <&kp AMPERSAND>;
-            key-positions = <32 33>;
+            key-positions = <23 25>;
+        };
+
+        pare_l {
+            bindings = <&kp ASTRK>;
+            key-positions = <6 8>;
+        };
+
+        pare_r {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <7 8>;
         };
     };
 
@@ -108,7 +118,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp L         &kp E         &kp COMMA                    &kp PERIOD                                                       &kp F        &kp W  &kp R  &kp Y  &kp P
-&kp U             &kp I         &kp O         &kp A                        &kp MINUS    &lt 6 TILDE                        &mt ESCAPE HASH  &kp K        &kp S  &kp T  &kp N  &kp H
+&kp U             &kp I         &kp O         &kp A                        &kp MINUS    &lt 6 PLUS                         &mt ESCAPE HASH  &kp K        &kp S  &kp T  &kp N  &kp H
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp SLASH    &kp SINGLE_QUOTE                   &kp SEMICOLON    &kp G        &kp J  &kp D  &kp M  &kp B
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE    &lt 5 ENTER                       &kp DEL
             >;
@@ -127,10 +137,10 @@
 
         NUM {
             bindings = <
-&kp ASTERISK                &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                        &kp CARET   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT     &kp AMPERSAND
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS  &kp KP_EQUAL      &kp UNDERSCORE  &kp DOLLAR  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp HASH   &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA     &kp PERIOD        &kp QUESTION    &kp EXCL    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE  &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans            &trans          &trans                                                              &kp PIPE
+&kp DQT                     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(EQUAL)                             &kp EQUAL      &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp CARET
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS   &kp UNDER       &kp EXCL   &kp DOLLAR     &kp RIGHT_BRACE    &kp PIPE              &kp HASH          &kp PERCENT
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA      &kp PERIOD      &kp GRAVE  &kp LS(MINUS)  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp PLUS          &kp INT1
+&trans                      &trans           &trans           &trans           &trans         &trans          &trans     &trans                                                                    &kp INT_YEN
             >;
         };
 
