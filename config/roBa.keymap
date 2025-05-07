@@ -36,14 +36,14 @@
             key-positions = <18 19>;
         };
 
-        caretilde {
+        caretilde_tride {
             bindings = <&kp EQUAL>;
             key-positions = <20 21>;
         };
 
         exclamation {
             bindings = <&kp EXCLAMATION>;
-            key-positions = <22 23>;
+            key-positions = <33 32>;
         };
 
         brace_l {
@@ -56,18 +56,18 @@
             key-positions = <31 32>;
         };
 
-        plus {
-            bindings = <&kp LS(SEMI)>;
+        semi_plus {
+            bindings = <&kp SEMI>;
             key-positions = <20 18>;
         };
 
         equal {
-            bindings = <&kp UNDER>;
+            bindings = <&kp SINGLE_QUOTE>;
             key-positions = <19 20>;
         };
 
         at {
-            bindings = <&kp AT_SIGN>;
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <25 24>;
         };
 
@@ -77,7 +77,7 @@
         };
 
         and {
-            bindings = <&kp AMPERSAND>;
+            bindings = <&kp CARET>;
             key-positions = <23 25>;
         };
 
@@ -89,6 +89,21 @@
         pare_r {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <7 8>;
+        };
+
+        pipe {
+            bindings = <&kp LS(INTERNATIONAL_3)>;
+            key-positions = <2 3>;
+        };
+
+        grave {
+            bindings = <&kp LS(AT_SIGN)>;
+            key-positions = <2 1>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <8 9>;
         };
     };
 
@@ -117,10 +132,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp L         &kp E         &kp COMMA                    &kp PERIOD                                                       &kp F        &kp W  &kp R  &kp Y  &kp P
-&kp U             &kp I         &kp O         &kp A                        &kp MINUS    &lt 6 PLUS                         &mt ESCAPE HASH  &kp K        &kp S  &kp T  &kp N  &kp H
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp SLASH    &kp SINGLE_QUOTE                   &kp SEMICOLON    &kp G        &kp J  &kp D  &kp M  &kp B
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE    &lt 5 ENTER                       &kp DEL
+&kp Q             &kp L         &kp E         &kp COMMA                    &kp PERIOD                                                               &kp F        &kp W  &kp R  &kp Y  &kp P
+&kp U             &kp I         &kp O         &kp A                        &kp MINUS    &lt 6 DOLLAR                       &mt ESCAPE HASH          &kp K        &kp S  &kp T  &kp N  &kp H
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp SLASH    &kp AMPERSAND                      &kp LS(INTERNATIONAL_1)  &kp G        &kp J  &kp D  &kp M  &kp B
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE            &lt 5 ENTER                       &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -137,10 +152,10 @@
 
         NUM {
             bindings = <
-&kp DQT                     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(EQUAL)                             &kp EQUAL      &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp CARET
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS   &kp UNDER       &kp EXCL   &kp DOLLAR     &kp RIGHT_BRACE    &kp PIPE              &kp HASH          &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA      &kp PERIOD      &kp GRAVE  &kp LS(MINUS)  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp PLUS          &kp INT1
-&trans                      &trans           &trans           &trans           &trans         &trans          &trans     &trans                                                                    &kp INT_YEN
+&kp DQT                     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp COLON                                      &kp EQUAL                &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp CARET
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS  &kp UNDER       &kp EXCL         &kp DOLLAR               &kp RIGHT_BRACE    &kp PIPE              &kp HASH          &kp PERCENT
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA     &kp PERIOD      &kp LS(AT_SIGN)  &kp LS(INTERNATIONAL_1)  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp PLUS          &kp LS(INTERNATIONAL_3)
+&trans                      &trans           &trans           &trans           &trans        &trans          &trans           &trans                                                                              &kp RETURN2
             >;
         };
 
