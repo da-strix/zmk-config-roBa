@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: inorichi
-      revision: main
+      revision: 5fe2cb6
   self:
     path: config
