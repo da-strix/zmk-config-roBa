@@ -165,10 +165,10 @@
 
         NUM {
             bindings = <
-&kp DQT                     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp COLON                                     &kp EQUAL                &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp CARET
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS  &kp UNDER       &kp EXCL        &kp DOLLAR               &kp RIGHT_BRACE    &kp PIPE              &kp HASH          &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA     &kp PERIOD      &kp LEFT_BRACE  &kp LS(INTERNATIONAL_1)  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp PLUS          &kp LS(INTERNATIONAL_3)
-&trans                      &trans           &trans           &trans           &trans        &trans          &trans          &trans                                                                              &trans
+&kp ASTERISK   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DOT                                   &kp EQUAL                &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp CARET
+&kp LS(EQUAL)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &kp EQUAL      &kp EXCL        &kp DOLLAR               &kp RIGHT_BRACE    &kp PIPE              &kp HASH          &kp PERCENT
+&kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &kp COMMA      &kp LEFT_BRACE  &kp LS(INTERNATIONAL_1)  &kp RIGHT_BRACKET  &kp BACKSLASH         &kp PLUS          &kp LS(INTERNATIONAL_3)
+&trans         &trans        &trans        &trans        &trans     &trans         &trans          &trans                                                                              &trans
             >;
         };
 
